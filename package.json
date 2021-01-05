@@ -24,24 +24,15 @@
         "app",
         "dashboard"
     ],
-    "homepage": "https://startbootstrap.com/template/sb-admin",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://sjsolutions.com.br",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "Julio Silveira",
     "repository": {
         "type": "git",
         "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.3",
-        "bootstrap-datepicker": "^1.9.0",
-        "bootstrap-sass-datepicker": "^1.0.0"
+        "bootstrap": "4.5.3"
     },
     "devDependencies": {
         "autoprefixer": "10.0.1",

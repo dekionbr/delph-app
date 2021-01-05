@@ -1,0 +1,24 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Cadastro 2';
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css', rel='stylesheet', crossorigin='anonymous')
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .card.mb-4
+            .card-body.
+                Perfil
+        .card.mb-4
+            .card-body
+                include includes/cadastro-perfil.pug
+ 
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt.min.js', crossorigin='anonymous')
+    script(src='assets/demo/datepicker.js')

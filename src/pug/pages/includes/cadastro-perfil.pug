@@ -1,30 +1,32 @@
 form(class='needs-validation' novalidate)
-    h4.mb-3 Dados Pessoais
+    h4.mb-3 Perfil da empresa
     .row
         .col-md-4.mb-3
-            label(for='firstName') Primeiro Nome
+            label(for='firstName') Razão social
             input#firstName.form-control(type='text' placeholder='' required)
             .invalid-feedback
                 | O campo primeiro nome obrigatório.
             
         .col-md-4.mb-3
-            label(for='lastName') Último Nome
+            label(for='lastName') Nome Fantasia
             input#lastName.form-control(type='text' placeholder='' required)
             .invalid-feedback
                 | O campo último nome obrigatório.
-        
+
         .col-md-4.mb-3
-            label(for="birthday") Data de nascimento
-            input#birthday.form-control(data-provide="datepicker" required)
+            label(for='lastName') CNPJ
+            input#lastName.form-control(type='text' placeholder='' required)
             .invalid-feedback
-                | O campo data de nascimento obrigatório.
-
+                | O campo último nome obrigatório.
+    
     .mb-3
-        label(for="email") Email
+        label(for="email") Email de contato
         input#email.form-control(type="email" placeholder='voce@exemplo.pt')
-        .invalid-feedback
-            | O campo email é obrigatório.
-
+        
+    .mb-3
+        label(for="telefone") Telefone
+        input#telefone.form-control(type="text" placeholder='xxx (xx) xxxx.xxxx')
+        
     .mb-3
         label(for='address') Logradouro
         input#address.form-control(type="text" placeholder="1234 Main St" required)
@@ -52,28 +54,7 @@ form(class='needs-validation' novalidate)
             label(for="zip") Código Postal
             input#zip.form-control(type="text" placeholder="" required)
             .invalid-feedback
-                | Campo código postal.         
-    h4.mb-3 Dados profissionais
-    .row
-        .col-md-3.mb-3
-            label(for='position') Cargo
-            input#position.form-control(type='text' placeholder='' required)
-            .invalid-feedback
-                | O campo cargo obrigatório.
-            
-        .col-md-3.mb-3
-            label(for='office') Escritório
-            input#office.form-control(type='text' placeholder='' required)
-            .invalid-feedback
-                | O campo último nome obrigatório.
-        
-        .col-md-3.mb-3
-            label(for="startDate") Data de Início
-            input#startDate.form-control(data-provide="datepicker" required)
-            .invalid-feedback
-                | O campo data de início obrigatório.
-        .col-md-3.mb-3
-            label(for="salary") Salário
-            input#salary.form-control(type='text' placeholder='€$ 9.999,00')
+                | Campo código postal.   
+      
     hr.mb-4 
     button.btn.btn-primary.btn-lg.text-right(type="submit") Salvar
