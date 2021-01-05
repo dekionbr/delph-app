@@ -1,0 +1,59 @@
+form(class='needs-validation' novalidate)
+    h4.mb-3 Dados Pessoais
+    .row
+        .col-md-4.mb-3
+            label(for='firstName') Primeiro Nome
+            input#firstName.form-control(type='text' placeholder='' required)
+            .invalid-feedback
+                | O campo primeiro nome obrigatório.
+            
+        .col-md-4.mb-3
+            label(for='lastName') Último Nome
+            input#lastName.form-control(type='text' placeholder='' required)
+            .invalid-feedback
+                | O campo último nome obrigatório.
+        
+        .col-md-4.mb-3
+            label(for="birthday") Data de nascimento
+            input#birthday.form-control(data-provide="datepicker" required)
+            .invalid-feedback
+                | O campo data de nascimento obrigatório.
+
+    .mb-3
+        label(for="email") Email
+        input#email.form-control(type="email" placeholder='voce@exemplo.pt')
+        .invalid-feedback
+            | O campo email é obrigatório.
+
+    .mb-3
+        label(for='address') Logradouro
+        input#address.form-control(type="text" placeholder="1234 Main St" required)
+        .invalid-feedback
+            | Campo endereço obrigatório.
+        
+    .row
+        .col-md-5.mb-3
+            label(for="country") País 
+            select#country.custom-select.d-block.w-100(required)
+                option(value="") Selecione...
+                option Portugal
+            .invalid-feedback
+                | Campo país obrigatório.
+            
+        .col-md-4.mb-3
+            label(for="state") Estado
+            select#country.custom-select.d-block.w-100(required)
+                option(value="") Selecione...
+                option California
+            .invalid-feedback
+                | Campo estado obrgiatório.
+            
+        .col-md-3.mb-3
+            label(for="zip") Código Postal
+            input#zip.form-control(type="text" placeholder="" required)
+            .invalid-feedback
+                | Campo código postal.         
+    h4.mb-3 Dados profissionais
+    
+    hr.mb-4 
+    button.btn.btn-primary.btn-lg.text-right(type="submit") Salvar

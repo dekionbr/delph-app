@@ -1,0 +1,23 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Cadastro 2';
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css', rel='stylesheet', crossorigin='anonymous')
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .card.mb-4
+            .card-body.
+                Cadastro de usuário
+        .card.mb-4
+            .card-body
+                include includes/cadastro-usuario.pug
+ 
+append scripts
+    script(src='assets/demo/datepicker.js')
+    script(src='assets/demo/tooltip.js')
